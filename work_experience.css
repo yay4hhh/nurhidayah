@@ -1,0 +1,26 @@
+.exp-card {
+    max-width: 760px;
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    border-left: 5px solid var(--primary);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.exp-card h3 {
+    font-size: 22px;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.year {
+    color: #5c5858;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.exp-card ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}

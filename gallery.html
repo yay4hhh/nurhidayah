@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<script>
+function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    lightbox.classList.remove("closing");
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+
+    lightbox.classList.add("closing");
+
+    setTimeout(() => {
+        lightbox.style.display = "none";
+        lightbox.classList.remove("closing");
+    }, 300);
+}
+
+document.getElementById("lightbox").addEventListener("click", function(e) {
+    if (e.target.id === "lightbox") {
+        closeLightbox();
+    }
+});
+</script>
+
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+</div>
+
+
+
+<body>
+
+<style>
+body {
+    background-image:url('bg 4.jpg'); 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+</style>
+
+<header class="header">
+    <div class="logo">Nur Hidayah binti Abdul Razak | Professional Resume</div>
+    </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About_me.html">About Me</a>
+            <a href="skill.html">Skills</a>
+            <a href="work_experience.html">Work Experience</a>
+            <a href="education.html">Education</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+</header>
+
+<section class="gallery-two-column">
+
+    <div class="gallery-column">
+        <h3>Internship Experience</h3>
+        <p class="gallery-desc">A collection of photos during my internship journey, capturing the work environment, tasks, and meaningful moments.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="intern 4.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 5.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 6.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 7.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 8.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 9.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 10.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 11.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 12.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 13.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 14.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 15.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 16.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 17.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 18.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 19.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 20.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 21.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 22.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 23.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 1.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 24.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 25.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 26.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 27.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 28.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 29.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 30.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 31.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 32.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 33.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="intern 35.jpg" onclick="openLightbox(this)"></div>
+
+        </div>
+    </div>
+
+    <div class="gallery-column">
+        <h3>University Activities</h3>
+        <p class="gallery-desc">Photos from my involvement in campus programs, club activities, academic events, and teamwork sessions.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="uni 4.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 1.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 2.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 3.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 5.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 6.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 7.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 8.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 13.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 10.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 11.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 12.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 14.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 15.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 16.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 17.jpg" onclick="openLightbox(this)"></div>    
+            <div class="gallery-item"><img src="uni 18.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 31.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 19.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 20.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 21.jpg" onclick="openLightbox(this)"></div> 
+            <div class="gallery-item"><img src="uni 22.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 23.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 24.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 25.jpg" onclick="openLightbox(this)"></div>       
+            <div class="gallery-item"><img src="uni 26.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 27.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 28.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 29.jpg" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="uni 30.jpg" onclick="openLightbox(this)"></div>
+        </div>
+    </div>
+
+<section class="gallery-one-column"></section>
+    <div class="gallery-column">
+        <h3>My Work</h3>
+        <p class="gallery-desc">A collection of photos of my work using Canva Software.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="Food Pyramid Infographic A3.png" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="Copy of WM.png" onclick="openLightbox(this)"></div>
+            <div class="gallery-item"><img src="work 3.png" onclick="openLightbox(this)"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Nur Hidayah | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
